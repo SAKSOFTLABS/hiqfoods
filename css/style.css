@@ -391,8 +391,14 @@ a:focus {
 /* end slider section */
 
 .card_detail-ox {
-  padding-top: 75px;
+  padding-top: 35px;
 
+}
+/*Gallery Section*/
+
+.gallery_class{
+  align-items: center;
+  text-align: center;
 }
 
 /* about section */
@@ -402,7 +408,7 @@ a:focus {
 }
 
 .about_section h4 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .about_card-container {
@@ -420,11 +426,12 @@ a:focus {
 .about_card .about-detail {
   transition: box-shadow .3s;
   padding: 2px 25px 35px 25px;
-  height: 450px;
+  height: 350px;
   float: center;
   -webkit-box-shadow: -1px 0px 25px 9px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: -1px 0px 25px 9px rgba(0, 0, 0, 0.09);
-   box-shadow: -1px 0px 25px 9px rgba(0, 0, 0, 0.09); 
+   box-shadow: -1px 0px 25px 9px rgba(0, 0, 0, 0.09);
+   width: 100%; 
 }
 
 .about_card .about-detail:hover{
@@ -439,12 +446,13 @@ a:focus {
 }
 
 .about_card .about-detail p {
-  margin-top: 15px;
+  margin-top: -5px;
+  font-size:90%;
 }
 
 
 .about_card img {
-  width: 100%;
+  width: 90%;
 }
 
 .about_card a {
@@ -453,7 +461,7 @@ a:focus {
   border: 2px solid #c4d70f;
   color: #c4d70f;
   border-radius: 35px;
-  margin-top: 20px;
+  margin-top:25px;
 }
 
 .about_card a:hover {
@@ -468,7 +476,8 @@ a:focus {
 
 /* portfolio section */
 .portfolio_section {
-  margin: 150px ;
+  padding-block: 9rem;
+  margin: auto ;
   margin-bottom: auto;
   text-align: center;
 }
@@ -479,7 +488,7 @@ a:focus {
 
 .portfolio_img-box img {
   width: 100%;
-  height: max-content;
+  height: auto;
 }
 
 /* end portfolio section */
