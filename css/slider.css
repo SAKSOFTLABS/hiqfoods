@@ -1,84 +1,113 @@
-.container {
-    position: relative;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-    align-content: center;
-    max-width: 100%;
-    height: auto;
+#gallery {
+  padding-top: 40px;
 }
-  
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
+@media screen and (min-width: 991px) {
+  #gallery {
+    padding: 60px 30px 0 30px;
   }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+}
+
+.img-wrapper {
+  position: relative;
+  margin-top: 15px;
+}
+.img-wrapper img {
+  width: 100%;
+}
+
+.img-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.img-overlay i {
+  color: #fff;
+  font-size: 3em;
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#overlay img {
+  margin: 0;
+  width: 80%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 5%;
+}
+@media screen and (min-width: 768px) {
+  #overlay img {
+    width: 60%;
   }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+}
+@media screen and (min-width: 1200px) {
+  #overlay img {
+    width: 50%;
   }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#nextButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#nextButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #nextButton {
+    font-size: 3em;
   }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #000000;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+}
+
+#prevButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#prevButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #prevButton {
+    font-size: 3em;
   }
-  
-  /* Container for image text */
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
+}
+
+#exitButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#exitButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #exitButton {
+    font-size: 3em;
   }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+}
