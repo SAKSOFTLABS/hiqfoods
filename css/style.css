@@ -81,10 +81,14 @@ body {
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0px 25px;
+  padding: 0px 20px;
   color: #fefeff;
   text-align: center;
   font-family: "Roboto", sans-serif;
+}
+
+.nav-link{
+  margin-top: 10px;
 }
 
 .custom_menu-btn {
@@ -184,7 +188,7 @@ a:focus {
 
 a:hover,
 a:focus {
-  color: initial;
+  color: #a0e711;
 }
 
 .btn,
