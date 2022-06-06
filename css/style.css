@@ -419,9 +419,14 @@ nav_left {
 }
 
 nav_left img{
+  transition: padding .4s ease;
   float: left;
   width: 100%;
   padding: 20px;
+}
+
+nav_left img:hover{
+  padding: 30px;
 }
 
 article {
@@ -531,8 +536,13 @@ section::after {
 }
 
 .portfolio_img-box img {
+  transition: width .4s ease;
   width: 100%;
   height: auto;
+}
+
+.portfolio_img-box img:hover {
+  width: 95%;
 }
 
 /* end portfolio section */
@@ -635,11 +645,80 @@ section::after {
 }
 
 .contact_img-box img {
+  transition: padding .4s ease;
   width: 100%;
+}
+
+.contact_img-box img:hover {
+  padding: 5px;
+
 }
 
 
 /* contact section */
+
+/* bottom image */
+.about-us2{
+  
+  transition: box-shadow .3s,border-radius .3s;
+  float: center;
+   
+}
+
+.about-us2:hover{
+  box-shadow: -1px 0px 25px 9px rgba(0, 0, 0, 0.12);
+  border-radius: 30px;
+}
+
+nav_left2 {
+  float:left;
+  width: 22%; /* only for demonstration, should be removed */
+  height: 150px; 
+  background: rgba(204, 204, 204, 0);
+  padding: 10px;
+  margin-left: 55px;
+  padding-bottom: 50px;
+}
+
+nav_left2 img{
+  transition: padding .3s;
+  float: right;
+  width: 100%;
+}
+
+nav_left2 img:hover{
+  float: right;
+  width: 100%;
+  padding: 3px;
+}
+
+article2 {
+  float:left;
+  padding: 20px;
+  width: 60%;
+  /* background-color: #f1f1f1; */
+  height: 300px;
+  justify-content: center;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  article2 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+  nav_left2{
+    height: auto;
+    width: 86%;
+    margin-left: 25px;
+  }
+}
 
 /* why section */
 .Why_section {
@@ -842,4 +921,15 @@ section::after {
   display:flex;
   justify-content: center;
   padding: 25px;
+}
+
+#bottom-poster{
+  display: flex;
+  justify-content: center;
+  
+}
+
+#bottom-img{
+  padding: 30px;
+  scroll-padding: 40px;
 }
